@@ -7,10 +7,9 @@
 
     <title>Grupo de Estudos</title>
 
+    <script src="script.js" defer></script>
+
     <style>
-        /* =========================
-           PÁGINA
-        ========================= */
 
         html {
             background-color: #000000;
@@ -30,11 +29,6 @@
             border-left: 1px solid #dcd8d0;
             border-right: 1px solid #dcd8d0;
         }
-
-
-        /* =========================
-           MENU
-        ========================= */
 
         .menu {
             margin-bottom: 32px;
@@ -63,11 +57,6 @@
             color: #e0a458;
         }
 
-
-        /* =========================
-           TÍTULOS
-        ========================= */
-
         h1 {
             font-size: 34px;
             line-height: 1.25;
@@ -82,11 +71,6 @@
             padding-left: 14px;
             border-left: 5px solid #c8553d;
         }
-
-
-        /* =========================
-           CAIXA DE APRESENTAÇÃO
-        ========================= */
 
         .destaque {
             margin: 0 0 32px 0;
@@ -115,11 +99,6 @@
             line-height: 1.5;
         }
 
-
-        /* =========================
-           TEXTOS
-        ========================= */
-
         p {
             margin-top: 16px;
             margin-bottom: 16px;
@@ -132,11 +111,6 @@
         em {
             color: #5c6670;
         }
-
-
-        /* =========================
-           TABELA
-        ========================= */
 
         table {
             border-collapse: collapse;
@@ -181,11 +155,6 @@
             font-size: 11px;
         }
 
-
-        /* =========================
-           AVISO
-        ========================= */
-
         blockquote {
             margin-left: 0;
             margin-right: 0;
@@ -199,11 +168,6 @@
 
             font-size: 14px;
         }
-
-
-        /* =========================
-           FORMULÁRIO
-        ========================= */
 
         fieldset {
             margin-bottom: 24px;
@@ -271,11 +235,6 @@
             margin: 6px 0;
         }
 
-
-        /* =========================
-           BOTÕES
-        ========================= */
-
         button {
             font-family: inherit;
             font-size: 13px;
@@ -294,11 +253,6 @@
         button:hover {
             background-color: #a8402c;
         }
-
-
-        /* =========================
-           RODAPÉ
-        ========================= */
 
         .rodape {
             margin-top: 48px;
@@ -325,8 +279,6 @@
 
 <body>
 
-    <!-- MENU -->
-
     <nav class="menu">
         <ul>
             <li>
@@ -338,9 +290,6 @@
             </li>
         </ul>
     </nav>
-
-
-    <!-- APRESENTAÇÃO -->
 
     <section class="destaque">
 
@@ -358,9 +307,6 @@
         </p>
 
     </section>
-
-
-    <!-- PRÓXIMOS ENCONTROS -->
 
     <h2>Próximos encontros</h2>
 
@@ -445,9 +391,6 @@
 
     </table>
 
-
-    <!-- INSCRIÇÃO -->
-
     <h2>Inscrição</h2>
 
 
@@ -458,8 +401,6 @@
 
 
     <form>
-
-        <!-- SEUS DADOS -->
 
         <fieldset>
 
@@ -508,9 +449,6 @@
 
         </fieldset>
 
-
-        <!-- SUA PARTICIPAÇÃO -->
-
         <fieldset>
 
             <legend>Sua participação</legend>
@@ -557,10 +495,7 @@
                 max="100"
             >
 
-
-            <!-- PARTICIPAÇÃO -->
-
-            <fieldset>
+            <fieldset id="participacao">
 
                 <legend>Você prefere participar</legend>
 
@@ -593,9 +528,6 @@
                 </label>
 
             </fieldset>
-
-
-            <!-- TEMAS -->
 
             <fieldset>
 
@@ -632,9 +564,6 @@
 
             </fieldset>
 
-
-            <!-- APRESENTAÇÃO -->
-
             <label for="apresentacao">
                 Sobre o que você toparia apresentar?
             </label>
@@ -659,8 +588,9 @@
 
         </fieldset>
 
-
-        <!-- BOTÕES -->
+        <p id="resumo">
+            Resumo: preencha o formulário para ver.
+        </p>
 
         <button type="submit">
             Quero participar
@@ -671,9 +601,6 @@
         </button>
 
     </form>
-
-
-    <!-- RODAPÉ -->
 
     <div class="rodape">
 
